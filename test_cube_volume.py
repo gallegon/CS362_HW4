@@ -16,6 +16,7 @@ class test_cube_volume(unittest.TestCase):
 		for i in range(10):
 			self.assertEqual(cube_volume.calculate_volume(i), pow(i, 3))
 		self.assertEqual(cube_volume.calculate_volume(13.3), pow(13.3, 3))
+		self.assertEqual(cube_volume.calculate_volume(-3), 27)
 
 if __name__ == '__main__':
 	unittest.main()
